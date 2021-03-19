@@ -21,16 +21,7 @@ def only_evens(list_of_numbers):
     return even_numbers
 
 def only_evens_numpy(list_of_numbers):
-    """Take a numpy array of numbers and return a numpy array of the even values."""
-    
-    # Make sure the list of numbers is an array
     array_of_numbers = np.array(list_of_numbers)
-    
-    # Find the even numbers in the array
-    evens_mask = array_of_numbers % 2 == 0
-    
-    # Apply mask to list of numbers to get only evens
-    even_numbers_array = array_of_numbers[evens_mask]
-    
-    # Then return array of even numbers
-    return even_numbers_array
+    check_for_evens = list_array % 2 == 0
+    even_numbers = list_array[check_for_evens]
+    return even_numbers
